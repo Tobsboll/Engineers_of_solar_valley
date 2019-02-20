@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Engineers of Solar valley.xcodeproj">
+      location = "group:/Users/Tobias/Programmering/Engineers of Solar valley/Engineers of Solar valley/Simple_ship_exp.png">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

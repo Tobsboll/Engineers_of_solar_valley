@@ -1,90 +1,72 @@
+//#include <SFML/Graphics.hpp>
+//#include "Object.hpp"
+#include "Space.hpp"
+#include <iostream>
 
-//
-// Disclaimer:
-// ----------
-//
-// This code will work only if you selected window, graphics and audio.
-//
-// Note that the "Run Script" build phase will copy the required frameworks
-// or dylibs to your application bundle so you can execute it on any OS X
-// computer.
-//
-// Your resource files (images, sounds, fonts, ...) are also copied to your
-// application bundle. To get the path to these resources, use the helper
-// function `resourcePath()` from ResourcePath.hpp
-//
-
-#include <SFML/Audio.hpp>
-#include <SFML/Graphics.hpp>
-
-// Here is a small helper for you! Have a look.
-#include "ResourcePath.hpp"
 
 int main(int, char const**)
 {
     // Create the main window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
-
-    // Set the Icon
-    sf::Image icon;
-    if (!icon.loadFromFile(resourcePath() + "icon.png")) {
-        return EXIT_FAILURE;
-    }
-    window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
-
-    // Load a sprite to display
-    sf::Texture texture;
-    if (!texture.loadFromFile(resourcePath() + "cute_image.jpg")) {
-        return EXIT_FAILURE;
-    }
-    sf::Sprite sprite(texture);
-
-    // Create a graphical text to display
-    sf::Font font;
-    if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
-        return EXIT_FAILURE;
-    }
-    sf::Text text("Hello SFML", font, 50);
-    text.setFillColor(sf::Color::Black);
-
-    // Load a music to play
-    sf::Music music;
-    if (!music.openFromFile(resourcePath() + "nice_music.ogg")) {
-        return EXIT_FAILURE;
-    }
-
-    // Play the music
-    music.play();
-
+    //sf::RenderWindow window(sf::VideoMode(1280, 720), "Engineers of Solar valley");
+    // Create sense of time
+    sf::Clock clock;
+    sf::Time dt; // time between loops.
+    
+    // Create players
+//Ship ship(window.getSize().x, window.getSize().y, 1);
+    //Space space(window.getSize().x, window.getSize().y, 1);
+    
+    // Create space, with players and background, (adapted to screen size)
+   // Space space(window.getSize().x, window.getSize().y, 2); // 2 player
+    Space space(2); // 2 player
+    
+    
+    
     // Start the game loop
-    while (window.isOpen())
+    while (space.window.isOpen())
     {
+        // If no asteroids, generate level of asteroids
+        if (space.clear())
+        {
+            space.levelUp();
+        }
+        
+        // Reset timer
+        //dt = clock.restart();
+       
+        // Framerate check
+        //std::cout << "Framerate: ";
+        //std::cout << dt.asMilliseconds();
+        //std::cout << "\n";
+        
         // Process events
         sf::Event event;
-        while (window.pollEvent(event))
+        while (space.window.pollEvent(event))
         {
             // Close window: exit
             if (event.type == sf::Event::Closed) {
-                window.close();
+                space.window.close();
             }
 
             // Escape pressed: exit
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
-                window.close();
+                space.window.close();
             }
         }
 
         // Clear screen
-        window.clear();
-
-        // Draw the sprite
-        window.draw(sprite);
-
-        // Draw the string
-        window.draw(text);
-
+        space.window.clear();
+        
+        // Update
+        space.update();
+        
+        // Draw sprites
+        space.draw();
+        
         // Update the window
-        window.display();
+        space.window.display();
+        // Take rest for proper framerate
+        sf::sleep(sf::milliseconds(35));
     }
 
     return EXIT_SUCCESS;

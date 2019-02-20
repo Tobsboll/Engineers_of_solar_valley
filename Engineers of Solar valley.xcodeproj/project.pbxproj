@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F63788CF2200EF0D007A4B49 /* Asteroid_exp.png in Resources */ = {isa = PBXBuildFile; fileRef = F63788CE2200EF0D007A4B49 /* Asteroid_exp.png */; };
+		F63798882201DE32007D1F16 /* Space.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F63798862201DE32007D1F16 /* Space.cpp */; };
+		F637988A2201E849007D1F16 /* Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = F63798892201E849007D1F16 /* Stars.png */; };
+		F653B378220662E600898AD1 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = F653B377220662E500898AD1 /* Star.png */; };
+		F653B37B22076A8700898AD1 /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F653B37922076A8700898AD1 /* Utility.cpp */; };
+		F6A0DF9A220B8E5C00C4B1D1 /* Simple_ship_exp.png in Resources */ = {isa = PBXBuildFile; fileRef = F6A0DF99220B8E5C00C4B1D1 /* Simple_ship_exp.png */; };
+		F6C7711E21CEE1DD00EEFEBF /* Bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7711D21CEE1DD00EEFEBF /* Bullet.png */; };
+		F6DAE48A221DE894000B118B /* MonospaceBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6DAE489221DE894000B118B /* MonospaceBold.ttf */; };
 		F6ED35032190E13C00A9C2F5 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6ED35022190E13C00A9C2F5 /* ResourcePath.mm */; };
 		F6ED35062190E13C00A9C2F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6ED35052190E13C00A9C2F5 /* main.cpp */; };
 		F6ED35092190E13C00A9C2F5 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6ED35082190E13C00A9C2F5 /* cute_image.jpg */; };
 		F6ED350B2190E13C00A9C2F5 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = F6ED350A2190E13C00A9C2F5 /* nice_music.ogg */; };
 		F6ED350D2190E13C00A9C2F5 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6ED350C2190E13C00A9C2F5 /* sansation.ttf */; };
 		F6ED350F2190E13C00A9C2F5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6ED350E2190E13C00A9C2F5 /* icon.png */; };
+		F6ED35172190E1F400A9C2F5 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6ED35152190E1F400A9C2F5 /* Object.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F63788CE2200EF0D007A4B49 /* Asteroid_exp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Asteroid_exp.png; path = "Sprite sheets/Asteroid_exp.png"; sourceTree = "<group>"; };
+		F63798862201DE32007D1F16 /* Space.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Space.cpp; sourceTree = "<group>"; };
+		F63798872201DE32007D1F16 /* Space.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Space.hpp; sourceTree = "<group>"; };
+		F63798892201E849007D1F16 /* Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars.png; path = "Sprite sheets/Stars.png"; sourceTree = "<group>"; };
+		F653B377220662E500898AD1 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Star.png; path = "Sprite sheets/Star.png"; sourceTree = "<group>"; };
+		F653B37922076A8700898AD1 /* Utility.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Utility.cpp; sourceTree = "<group>"; };
+		F653B37A22076A8700898AD1 /* Utility.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Utility.hpp; sourceTree = "<group>"; };
+		F6A0DF99220B8E5C00C4B1D1 /* Simple_ship_exp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Simple_ship_exp.png; path = "Sprite sheets/Simple_ship_exp.png"; sourceTree = "<group>"; };
+		F6C7711D21CEE1DD00EEFEBF /* Bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bullet.png; path = ../../Asteroids/Asteroids/Bullet.png; sourceTree = "<group>"; };
+		F6DAE489221DE894000B118B /* MonospaceBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MonospaceBold.ttf; sourceTree = "<group>"; };
 		F6ED34FD2190E13C00A9C2F5 /* Engineers of Solar valley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Engineers of Solar valley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6ED35012190E13C00A9C2F5 /* Engineers of Solar valley-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Engineers of Solar valley-Info.plist"; sourceTree = "<group>"; };
 		F6ED35022190E13C00A9C2F5 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -25,6 +44,8 @@
 		F6ED350A2190E13C00A9C2F5 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
 		F6ED350C2190E13C00A9C2F5 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
 		F6ED350E2190E13C00A9C2F5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		F6ED35152190E1F400A9C2F5 /* Object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		F6ED35162190E1F400A9C2F5 /* Object.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +78,21 @@
 		F6ED34FF2190E13C00A9C2F5 /* Engineers of Solar valley */ = {
 			isa = PBXGroup;
 			children = (
+				F6DAE489221DE894000B118B /* MonospaceBold.ttf */,
+				F6A0DF99220B8E5C00C4B1D1 /* Simple_ship_exp.png */,
+				F6C7711D21CEE1DD00EEFEBF /* Bullet.png */,
 				F6ED35022190E13C00A9C2F5 /* ResourcePath.mm */,
 				F6ED35042190E13C00A9C2F5 /* ResourcePath.hpp */,
 				F6ED35052190E13C00A9C2F5 /* main.cpp */,
+				F63798862201DE32007D1F16 /* Space.cpp */,
+				F63798872201DE32007D1F16 /* Space.hpp */,
+				F653B37922076A8700898AD1 /* Utility.cpp */,
+				F653B37A22076A8700898AD1 /* Utility.hpp */,
+				F6ED35152190E1F400A9C2F5 /* Object.cpp */,
+				F6ED35162190E1F400A9C2F5 /* Object.hpp */,
+				F63798892201E849007D1F16 /* Stars.png */,
+				F653B377220662E500898AD1 /* Star.png */,
+				F63788CE2200EF0D007A4B49 /* Asteroid_exp.png */,
 				F6ED35072190E13C00A9C2F5 /* Resources */,
 				F6ED35002190E13C00A9C2F5 /* Supporting Files */,
 			);
@@ -112,7 +145,7 @@
 		F6ED34F42190E13C00A9C2F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Solvind Studio";
 				TargetAttributes = {
 					F6ED34FC2190E13C00A9C2F5 = {
@@ -143,9 +176,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6ED350F2190E13C00A9C2F5 /* icon.png in Resources */,
+				F6DAE48A221DE894000B118B /* MonospaceBold.ttf in Resources */,
+				F63788CF2200EF0D007A4B49 /* Asteroid_exp.png in Resources */,
 				F6ED350D2190E13C00A9C2F5 /* sansation.ttf in Resources */,
+				F6C7711E21CEE1DD00EEFEBF /* Bullet.png in Resources */,
 				F6ED350B2190E13C00A9C2F5 /* nice_music.ogg in Resources */,
+				F6A0DF9A220B8E5C00C4B1D1 /* Simple_ship_exp.png in Resources */,
 				F6ED35092190E13C00A9C2F5 /* cute_image.jpg in Resources */,
+				F653B378220662E600898AD1 /* Star.png in Resources */,
+				F637988A2201E849007D1F16 /* Stars.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F653B37B22076A8700898AD1 /* Utility.cpp in Sources */,
 				F6ED35062190E13C00A9C2F5 /* main.cpp in Sources */,
+				F63798882201DE32007D1F16 /* Space.cpp in Sources */,
 				F6ED35032190E13C00A9C2F5 /* ResourcePath.mm in Sources */,
+				F6ED35172190E1F400A9C2F5 /* Object.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,14 +229,39 @@
 		F6ED35102190E13C00A9C2F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -204,6 +271,7 @@
 					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"$(SFML_SYSTEM)",
@@ -231,14 +299,38 @@
 		F6ED35112190E13C00A9C2F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
 					"$(inherited)",
 				);
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"$(inherited)",
@@ -275,9 +367,13 @@
 		F6ED35132190E13C00A9C2F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Engineers of Solar valley/Engineers of Solar valley-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "Solvind.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -285,9 +381,13 @@
 		F6ED35142190E13C00A9C2F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Engineers of Solar valley/Engineers of Solar valley-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "Solvind.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
