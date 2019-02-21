@@ -32,6 +32,7 @@ private:
     std::uniform_int_distribution<> dis;
     std::uniform_int_distribution<> min_dis;
     sf::Font font;
+    std::vector<sf::Text> text;
     sf::Text text1;
     sf::Text text2;
     

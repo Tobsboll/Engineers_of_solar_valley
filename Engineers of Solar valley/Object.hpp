@@ -104,7 +104,7 @@ public:
 private:
     sf::Clock clock;
     float a_timer = 0.1; // Timer for animation
-    float exp_timer = 0.02; // Timer for explosion animation
+    float exp_timer = 0.05; // Timer for explosion animation
     int type; // sets colour of Asteroid
     bool explode = false;
 };

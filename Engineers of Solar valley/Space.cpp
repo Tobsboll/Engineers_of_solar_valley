@@ -27,30 +27,33 @@ Space::Space(int numPlayers): gen((std::random_device())()), dis(1, 9999), min_d
         sx = dis(gen) % wx+1; // x
         sy = dis(gen) % wy+1; // y
         st = dis(gen) % 2 +1; // t
-        ss = 0.005*(dis(gen) % 100 +1); // size
+        ss = 0.005*(dis(gen) % 50 +1); // size
         sa = dis(gen) % 8 + 1; // animation timer
         auto star = std::unique_ptr<Star> (new Star(sx,sy,st,ss,sa)); // allocate and push back pointer to star
         Stars.push_back(std::move(star));
     }
-    
-    // Initialize players
-   for (int i = 0; i < numPlayers;i++)
-   {
-       auto ship = std::unique_ptr<Ship> (new Ship((wx/(numPlayers+1)), wy, i+1));
-       Players.push_back(std::move(ship));
-   }
     
     // Initialize text for point rendering
     if (!font.loadFromFile(resourcePath()+"MonospaceBold.ttf"))
     {
         std::cout << "Font not loaded!";
     }
-    text1.setFont(font);
-    text2.setFont(font);
-    text1.setCharacterSize(24);
-    text2.setCharacterSize(24);
-    text1.setPosition(wx-160, 60);
-    text2.setPosition(40, 60);
+   
+    // Initialize players
+   for (int i = 0; i < numPlayers;i++)
+   {
+       auto ship = std::unique_ptr<Ship> (new Ship((wx/(numPlayers+1)), wy, i+1));
+       Players.push_back(std::move(ship));
+       sf::Text new_text;
+       text.push_back(new_text);
+       text[i].setFont(font);
+       text[i].setCharacterSize(24);
+       text[i].setString("0 p");
+   }
+    
+    // Explicit positioning
+    text[0].setPosition(wx-160, 60);
+    text[1].setPosition(40, 60);
     
 }
 
@@ -123,15 +126,10 @@ void Space::draw()
         if (Players[i]->dead()==false)
         {
             Players[i]->draw(window);
+            text[i].setString(std::to_string(Players[i]->getPoints())+" p");
+            window.draw(text[i]);
         }
     }
-    
-    // Draw points (generalize to more than 2 players later)
-    text1.setString(std::to_string(Players[0]->getPoints())+" p");
-    text2.setString(std::to_string(Players[1]->getPoints())+" p");
-    window.draw(text1);
-    window.draw(text2);
-    std::cout << std::to_string(Players[0]->getPoints())+ " " + std::to_string(Players[1]->getPoints())+"\n";
 }
 
 void Space::generateAsteroids(int num, float speed, sf::Vector2f old_centre, int old_type, sf::Vector2f odxy, int generation)
@@ -192,7 +190,9 @@ void Space::checkColl()
    {
         for (int j=0; j<Players.size(); j++)
         {
-            if ((getDiff(Asteroids[i]->centre(), Players[j]->getTip())<Asteroids[i]->getRad()) || (getDiff(Asteroids[i]->centre(), Players[j]->getAft(1))<Asteroids[i]->getRad()) || (getDiff(Asteroids[i]->centre(), Players[j]->getAft(2))<Asteroids[i]->getRad()))
+            if ((getDiff(Asteroids[i]->centre(), Players[j]->getTip())<Asteroids[i]->getRad()*1.1) ||
+                (getDiff(Asteroids[i]->centre(), Players[j]->getAft(1))<Asteroids[i]->getRad()*1.1) ||
+                (getDiff(Asteroids[i]->centre(), Players[j]->getAft(2))<Asteroids[i]->getRad()*1.1))
             {
                 // Kill player if not inv.
                 if (Players[j]->inv_clock.getElapsedTime().asSeconds() > Players[j]->inv_time)

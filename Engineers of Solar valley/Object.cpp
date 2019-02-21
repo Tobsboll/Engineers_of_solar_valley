@@ -384,7 +384,7 @@ Star::Star(int x, int y, int itype, float size, float ia_timer) // int x, int y
 
 void Star::animate(sf::RenderTarget& window)
 {
-    sRect = sf::IntRect(32*anim_Count,type*32,32,32);
+    sRect = sf::IntRect(32*anim_Count,(type-1)*32,32,32);
     if (clock.getElapsedTime().asSeconds() > a_timer) // if enough time for next frame
     {
         if (anim_Count < 4) // if not last in sprite sheet
@@ -533,7 +533,7 @@ void Asteroid::animate(sf::RenderTarget& window)
         sRect = sf::IntRect(32*(anim_Count),(type-1)*32,32,32); //(type-1)*32
         if (clock.getElapsedTime().asSeconds() > a_timer) // if enough time for next frame
         {
-            if (anim_Count < 9) // if not last in sprite sheet
+            if (anim_Count < 7) // if not last in sprite sheet
             {
                 anim_Count++;
             } else
@@ -544,10 +544,10 @@ void Asteroid::animate(sf::RenderTarget& window)
         }
     } else // explosion
     {
-        sRect = sf::IntRect(32*anim_Count,(type+3)*32,32,32);
+        sRect = sf::IntRect(32*anim_Count,4*32,32,32);
         if (clock.getElapsedTime().asSeconds() > exp_timer) // if enough time for next frame
         {
-            if (anim_Count < 9) // if not last in sprite sheet
+            if (anim_Count < 7) // if not last in sprite sheet
             {
                 anim_Count++;
             } else

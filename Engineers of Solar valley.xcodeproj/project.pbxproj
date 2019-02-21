@@ -7,30 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F63788CF2200EF0D007A4B49 /* Asteroid_exp.png in Resources */ = {isa = PBXBuildFile; fileRef = F63788CE2200EF0D007A4B49 /* Asteroid_exp.png */; };
 		F63798882201DE32007D1F16 /* Space.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F63798862201DE32007D1F16 /* Space.cpp */; };
-		F637988A2201E849007D1F16 /* Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = F63798892201E849007D1F16 /* Stars.png */; };
-		F653B378220662E600898AD1 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = F653B377220662E500898AD1 /* Star.png */; };
 		F653B37B22076A8700898AD1 /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F653B37922076A8700898AD1 /* Utility.cpp */; };
-		F6A0DF9A220B8E5C00C4B1D1 /* Simple_ship_exp.png in Resources */ = {isa = PBXBuildFile; fileRef = F6A0DF99220B8E5C00C4B1D1 /* Simple_ship_exp.png */; };
 		F6C7711E21CEE1DD00EEFEBF /* Bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7711D21CEE1DD00EEFEBF /* Bullet.png */; };
 		F6DAE48A221DE894000B118B /* MonospaceBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6DAE489221DE894000B118B /* MonospaceBold.ttf */; };
+		F6DAE48C221DF7DC000B118B /* Simple_ship_exp.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DAE48B221DF7DC000B118B /* Simple_ship_exp.png */; };
+		F6DAE48E221DF8BB000B118B /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DAE48D221DF8BB000B118B /* Star.png */; };
+		F6DAE490221E948D000B118B /* Asteroid_exp.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DAE48F221E948D000B118B /* Asteroid_exp.png */; };
 		F6ED35032190E13C00A9C2F5 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6ED35022190E13C00A9C2F5 /* ResourcePath.mm */; };
 		F6ED35062190E13C00A9C2F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6ED35052190E13C00A9C2F5 /* main.cpp */; };
 		F6ED35172190E1F400A9C2F5 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6ED35152190E1F400A9C2F5 /* Object.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F63788CE2200EF0D007A4B49 /* Asteroid_exp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Asteroid_exp.png; path = "Sprite sheets/Asteroid_exp.png"; sourceTree = "<group>"; };
 		F63798862201DE32007D1F16 /* Space.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Space.cpp; sourceTree = "<group>"; };
 		F63798872201DE32007D1F16 /* Space.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Space.hpp; sourceTree = "<group>"; };
-		F63798892201E849007D1F16 /* Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars.png; path = "Sprite sheets/Stars.png"; sourceTree = "<group>"; };
-		F653B377220662E500898AD1 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Star.png; path = "Sprite sheets/Star.png"; sourceTree = "<group>"; };
 		F653B37922076A8700898AD1 /* Utility.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Utility.cpp; sourceTree = "<group>"; };
 		F653B37A22076A8700898AD1 /* Utility.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Utility.hpp; sourceTree = "<group>"; };
-		F6A0DF99220B8E5C00C4B1D1 /* Simple_ship_exp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Simple_ship_exp.png; path = "Sprite sheets/Simple_ship_exp.png"; sourceTree = "<group>"; };
 		F6C7711D21CEE1DD00EEFEBF /* Bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bullet.png; path = ../../Asteroids/Asteroids/Bullet.png; sourceTree = "<group>"; };
 		F6DAE489221DE894000B118B /* MonospaceBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MonospaceBold.ttf; sourceTree = "<group>"; };
+		F6DAE48B221DF7DC000B118B /* Simple_ship_exp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Simple_ship_exp.png; sourceTree = "<group>"; };
+		F6DAE48D221DF8BB000B118B /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		F6DAE48F221E948D000B118B /* Asteroid_exp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Asteroid_exp.png; sourceTree = "<group>"; };
 		F6ED34FD2190E13C00A9C2F5 /* Engineers of Solar valley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Engineers of Solar valley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6ED35012190E13C00A9C2F5 /* Engineers of Solar valley-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Engineers of Solar valley-Info.plist"; sourceTree = "<group>"; };
 		F6ED35022190E13C00A9C2F5 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -70,8 +68,9 @@
 		F6ED34FF2190E13C00A9C2F5 /* Engineers of Solar valley */ = {
 			isa = PBXGroup;
 			children = (
+				F6DAE48F221E948D000B118B /* Asteroid_exp.png */,
 				F6DAE489221DE894000B118B /* MonospaceBold.ttf */,
-				F6A0DF99220B8E5C00C4B1D1 /* Simple_ship_exp.png */,
+				F6DAE48B221DF7DC000B118B /* Simple_ship_exp.png */,
 				F6C7711D21CEE1DD00EEFEBF /* Bullet.png */,
 				F6ED35022190E13C00A9C2F5 /* ResourcePath.mm */,
 				F6ED35042190E13C00A9C2F5 /* ResourcePath.hpp */,
@@ -82,9 +81,7 @@
 				F653B37A22076A8700898AD1 /* Utility.hpp */,
 				F6ED35152190E1F400A9C2F5 /* Object.cpp */,
 				F6ED35162190E1F400A9C2F5 /* Object.hpp */,
-				F63798892201E849007D1F16 /* Stars.png */,
-				F653B377220662E500898AD1 /* Star.png */,
-				F63788CE2200EF0D007A4B49 /* Asteroid_exp.png */,
+				F6DAE48D221DF8BB000B118B /* Star.png */,
 				F6ED35072190E13C00A9C2F5 /* Resources */,
 				F6ED35002190E13C00A9C2F5 /* Supporting Files */,
 			);
@@ -163,12 +160,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DAE490221E948D000B118B /* Asteroid_exp.png in Resources */,
 				F6DAE48A221DE894000B118B /* MonospaceBold.ttf in Resources */,
-				F63788CF2200EF0D007A4B49 /* Asteroid_exp.png in Resources */,
+				F6DAE48E221DF8BB000B118B /* Star.png in Resources */,
 				F6C7711E21CEE1DD00EEFEBF /* Bullet.png in Resources */,
-				F6A0DF9A220B8E5C00C4B1D1 /* Simple_ship_exp.png in Resources */,
-				F653B378220662E600898AD1 /* Star.png in Resources */,
-				F637988A2201E849007D1F16 /* Stars.png in Resources */,
+				F6DAE48C221DF7DC000B118B /* Simple_ship_exp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
